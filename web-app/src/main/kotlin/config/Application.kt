@@ -14,7 +14,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication(scanBasePackages = ["config", "dev.workingtheory"])
 public class Application : SpringBootServletInitializer()
 {
-	private val logger = LogManager.getLogger(Application::javaClass)
+	private val logger = LogManager.getLogger(Application::class.java)
 
 	/**
 	 * Configures {@link #main} as starting point of the application.

@@ -44,7 +44,7 @@
 			<AppenderRef ref="Console" />
 		</Root>
 
-		<Logger name="dev.all_things" level="INFO" additivity="false">
+		<Logger name="dev.workingtheory" level="INFO" additivity="false">
 			<AppenderRef ref="Console" />
 		</Logger>
 
