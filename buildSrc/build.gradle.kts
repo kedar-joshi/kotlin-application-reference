@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 description = "kotlin-application-parent"
 
@@ -24,7 +25,7 @@ java {
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(23)
+	jvmToolchain(24)
 
 	compilerOptions {
 
@@ -41,5 +42,5 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-allopen:2.1.20")
 
 	// Spring Boot
-	implementation("org.springframework.boot:spring-boot-gradle-plugin:3.4.4")
+	implementation("org.springframework.boot:spring-boot-gradle-plugin:3.5.0-M3")
 }

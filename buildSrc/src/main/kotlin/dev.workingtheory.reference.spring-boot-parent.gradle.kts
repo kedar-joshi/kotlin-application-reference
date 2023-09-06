@@ -20,6 +20,11 @@ plugins {
 group = "dev.workingtheory.reference"
 version = "1.0.0-SNAPSHOT"
 
+// Spring Boot dependency overrides
+// extra["slf4j.version"] = "2.0.9"
+// extra["flyway.version"] = "9.22.0"
+// extra["hibernate.version"] = "6.3.1.Final"
+
 // Enabled by 'Java' plugin
 java {
 
@@ -31,7 +36,7 @@ java {
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(23)
+	jvmToolchain(24)
 
 	compilerOptions {
 		freeCompilerArgs.add("-Xjsr305=strict")
@@ -53,6 +58,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-log4j2")
 	implementation("com.lmax:disruptor:3.4.4") // Required by Log4j2 for asynchronous logging
 
+	//	Apache commons
+	implementation("org.apache.commons:commons-lang3")
+
 	// Spring framework
 	implementation("org.springframework.boot:spring-boot-starter-web") {
 
@@ -67,13 +75,13 @@ dependencies {
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
 	implementation("com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("com.fasterxml.jackson.datatype:jackson-datatype-hibernate5-jakarta")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-hibernate5-jakarta")
 
 	// Database
 	implementation("org.postgresql:postgresql")
 	implementation("com.zaxxer:HikariCP")
-	implementation("org.flywaydb:flyway-core")
+	implementation("org.flywaydb:flyway-database-postgresql")
 
 	// Persistence
 	implementation("org.springframework:spring-orm")
