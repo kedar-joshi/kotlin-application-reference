@@ -62,6 +62,15 @@ dependencies {
 		exclude("org.yaml", "snakeyaml")
 	}
 
+	// Database
+	implementation("org.postgresql:postgresql")
+	implementation("com.zaxxer:HikariCP")
+	implementation("org.flywaydb:flyway-core")
+
+	// Persistence
+	implementation("org.springframework:spring-orm")
+	implementation("org.hibernate.orm:hibernate-hikaricp")
+
 	// Testing
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
