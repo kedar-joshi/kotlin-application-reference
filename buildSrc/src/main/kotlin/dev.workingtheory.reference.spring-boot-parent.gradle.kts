@@ -56,6 +56,13 @@ dependencies {
 		exclude("org.yaml", "snakeyaml")
 	}
 
+	// Serialization / deserialization
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
+	implementation("com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-hibernate5-jakarta")
+	implementation("org.jetbrains.kotlin:kotlin-reflect")
+
 	// Database
 	implementation("org.postgresql:postgresql")
 	implementation("com.zaxxer:HikariCP")
