@@ -3,7 +3,7 @@ Reference implementation for developing Kotlin applications.
 
 ## System Requirements
 
-1. JDK 20 + Kotlin 1.9
+1. JDK 21 + Kotlin 1.9
 2. Gradle 8.5
 3. Spring Boot 3.1
 4. Apache Tomcat 10.1

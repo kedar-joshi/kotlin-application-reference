@@ -19,14 +19,15 @@ version = "1.0.0-SNAPSHOT"
 
 // Enabled by 'Java' plugin
 java {
-	sourceCompatibility = JavaVersion.VERSION_20
+
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 // Enabled by 'Kotlin' plugin
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(20)
+	jvmToolchain(21)
 
 	compilerOptions {
 		freeCompilerArgs.add("-Xjsr305=strict")
