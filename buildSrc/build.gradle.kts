@@ -17,19 +17,19 @@ java {
 	 * Although Kotlin compiler options are sufficient for Gradle,
 	 * IntelliJ often complains if this Java target compatibility is not explicitly set.
 	 */
-	targetCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_22
 }
 
 // Kotlin compiler configuration
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(22)
+	jvmToolchain(23)
 
 	compilerOptions {
 
 		// Kotlin target compatibility
-		jvmTarget = JvmTarget.JVM_21
+		jvmTarget = JvmTarget.JVM_22
 	}
 }
 

@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 // Plugins common for sub-modules
 plugins {
@@ -23,20 +24,20 @@ version = "1.0.0-SNAPSHOT"
 java {
 
 	// Java target compatibility
-	targetCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_23
 }
 
 // Enabled by 'Kotlin' plugin
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(22)
+	jvmToolchain(23)
 
 	compilerOptions {
 		freeCompilerArgs.add("-Xjsr305=strict")
 
 		// Kotlin target compatibility
-		jvmTarget = JvmTarget.JVM_21
+		jvmTarget = JvmTarget.JVM_23
 	}
 }
 
