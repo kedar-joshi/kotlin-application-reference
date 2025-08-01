@@ -17,7 +17,7 @@ java {
 	 * Although Kotlin compiler options are sufficient for Gradle,
 	 * IntelliJ often complains if this Java target compatibility is not explicitly set.
 	 */
-	targetCompatibility = JavaVersion.VERSION_22
+	targetCompatibility = JavaVersion.VERSION_23
 }
 
 // Kotlin compiler configuration
@@ -29,7 +29,7 @@ kotlin {
 	compilerOptions {
 
 		// Kotlin target compatibility
-		jvmTarget = JvmTarget.JVM_22
+		jvmTarget = JvmTarget.JVM_23
 	}
 }
 
@@ -37,8 +37,8 @@ kotlin {
 dependencies {
 
 	// Kotlin
-	implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20")
-	implementation("org.jetbrains.kotlin:kotlin-allopen:2.1.20")
+	implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.0")
+	implementation("org.jetbrains.kotlin:kotlin-allopen:2.2.0")
 
 	// Spring Boot
 	implementation("org.springframework.boot:spring-boot-gradle-plugin:3.5.4")
