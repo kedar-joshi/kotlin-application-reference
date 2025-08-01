@@ -23,20 +23,20 @@ version = "1.0.0-SNAPSHOT"
 java {
 
 	// Java target compatibility
-	targetCompatibility = JavaVersion.VERSION_23
+	targetCompatibility = JavaVersion.VERSION_24
 }
 
 // Enabled by 'Kotlin' plugin
 kotlin {
 
 	// JDK specific toolchain configuration
-	jvmToolchain(23)
+	jvmToolchain(24)
 
 	compilerOptions {
 		freeCompilerArgs.add("-Xjsr305=strict")
 
 		// Kotlin target compatibility
-		jvmTarget = JvmTarget.JVM_23
+		jvmTarget = JvmTarget.JVM_24
 	}
 }
 
